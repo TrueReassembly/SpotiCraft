@@ -1,0 +1,32 @@
+{
+  "schemaVersion": 1,
+  "id": "spoticraft",
+  "version": "${version}",
+  "name": "SpotiCraft",
+  "description": "Spotify integration in Minecraft",
+  "authors": [
+    "Chip"
+  ],
+  "contact": {
+    "website": "https://chipdev.me/"
+  },
+  "license": "MIT",
+  "icon": "assets/SpotiCraft/icon.png",
+  "environment": "client",
+  "entrypoints": {
+    "client": [
+      "me.chipdev.spoticraft.client.SpotiCraftClient"
+    ],
+    "main": [
+      "me.chipdev.spoticraft.SpotiCraft"
+    ]
+  },
+  "mixins": [
+    "SpotiCraft.mixins.json"
+  ],
+  "depends": {
+    "fabricloader": ">=0.14.11",
+    "fabric": "*",
+    "minecraft": "1.19.2"
+  }
+}
